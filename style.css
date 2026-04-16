@@ -1,3 +1,4 @@
+/* Reset básico para evitar margens estranhas entre navegadores */
 * {
     margin: 0;
     padding: 0;
