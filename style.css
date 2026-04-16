@@ -1,2 +1,76 @@
-nav{color: blue;}
-nav{text-align: center;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c0c0c0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.card-perfil {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    padding: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 150px;
+    border: 2px solid #000000;
+    object-fit: cover;
+    display: block;
+}
+
+.nome-usuario {
+    color: #0000ff;
+    font-size: 2rem;
+    margin: 0;
+    text-decoration: underline;
+    line-height: 1;
+}
+
+.bio-usuario {
+    color: #000000;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.botao-seguir {
+    background-color: #008000;
+    color: #ffffff;
+    border: 3px double #000000;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+   
+    /* REMOVIDO: pointer-events: none (isso impedia o clique) */
+    /* MANTIDO: cursor default para não mudar a seta do mouse */
+    cursor: default;
+   
+    /* Garante que não haja contorno azul ao clicar (opcional) */
+    outline: none;
+}
+
+/* Forçamos que NÃO haja reação ao passar o mouse */
+.botao-seguir:hover,
+.botao-seguir:active {
+    background-color: #008000; /* Mantém a mesma cor */
+    transform: none;           /* Impede movimento */
+    box-shadow: none;          /* Impede sombras */
+}
